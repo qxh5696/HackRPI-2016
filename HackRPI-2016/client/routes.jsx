@@ -3,6 +3,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 
 import DataPage from '../lib/ui/pages/data.jsx';
+import RegisterPage from '../lib/ui/pages/RegisterPage.jsx';
 
 FlowRouter.route('/',{
     name: 'Home',
@@ -10,3 +11,10 @@ FlowRouter.route('/',{
         mount(DataPage);
     }
 });
+
+FlowRouter.route('/register',{
+    name: 'Register',
+    action(){
+        mount(RegisterPage);
+    }
+})

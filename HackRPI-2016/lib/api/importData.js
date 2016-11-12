@@ -4,13 +4,6 @@ import { Meteor } from 'meteor/meteor';
  * Created by qadirhaqq on 11/10/16.
  */
 Meteor.methods({
-    'saveText'(text, filename){
-        var a = document.createElement('a');
-        a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
-        a.setAttribute('download', filename);
-        a.click()
-    },
-
     'importData'() {
     //https://candidate.hubteam.com/candidateTest/v1/partners?userKey=67dedee4e0cccfc4be883982fbad
     //data/suicide-squad.json
@@ -30,7 +23,7 @@ Meteor.methods({
         if(error){
             return console.warn(error);
         }
-        console.log(json);
+        // console.log(json);
 
         json = json.data;
         var canvas = d3.select(".importData")
@@ -47,7 +40,7 @@ Meteor.methods({
             })
             .attr("height", 50)
             .attr("y", function (d, i) {//remember "i" is the index of the array
-                console.log(d);
+                // console.log(d);
                 return i * 80;
             })
             .attr("fill","red");
