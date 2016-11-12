@@ -1,15 +1,17 @@
+import { Meteor } from 'meteor/meteor';
+
 /**
  * Created by qadirhaqq on 11/10/16.
  */
-function saveText(text, filename){
-    var a = document.createElement('a');
-    a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
-    a.setAttribute('download', filename);
-    a.click()
-}
+Meteor.methods({
+    'saveText'(text, filename){
+        var a = document.createElement('a');
+        a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
+        a.setAttribute('download', filename);
+        a.click()
+    },
 
-
-function importData() {
+    'importData'() {
     //https://candidate.hubteam.com/candidateTest/v1/partners?userKey=67dedee4e0cccfc4be883982fbad
     //data/suicide-squad.json
     //https://jsonplaceholder.typicode.com/posts
@@ -64,4 +66,12 @@ function importData() {
             });
     });
 }
+
+
+
+});
+
+
+
+
 
