@@ -1,11 +1,15 @@
 import React ,{ Component } from 'react';
+import ReactDOM from 'react-dom';
 
 export default class Home extends Component{
 
     handleSubmit(e){
 
         e.preventDefault();
-        this.props.onSubmit( this.refs.email, this.refs.username, this.refs.password );
+        let email = ReactDOM.findDOMNode(this.refs.username).value.trim();
+        let username = ReactDOM.findDOMNode(this.refs.username).value.trim();
+        let pwd = ReactDOM.findDOMNode(this.refs.password).value.trim();
+        this.props.onSubmit( email,username,pwd );
     }
 
     cancel(e){
@@ -15,8 +19,8 @@ export default class Home extends Component{
     render(){
         return(
             <div>
-                <form>
-                    <div className="form-group" onSubmit={this.handleSubmit.bind(this)}>
+                <form onSubmit={this.handleSubmit.bind(this)}>
+                    <div className="form-group">
                         <div className="row">
                             <label className="col-sm-2 control-label col-sm-offset-4">Email Address:</label>
                             <div className="col-sm-2">
