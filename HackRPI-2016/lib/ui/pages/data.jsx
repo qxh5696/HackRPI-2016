@@ -1,58 +1,61 @@
 import React, {Component} from 'react';
-
+import ReactDOM from 'react-dom';
 
 
 export default class DataPage extends Component{
 
     componentWillMount(){
         document.title = "Map";
+
     }
 
-    componentDidMount(){
+    componentDidMount() {
+        // this.loadScript();
 
-            let data = Meteor.call('fetchData',function(err,res){
-                if (err){
-                    console.log(err);
-                }
-                else {
-                    console.log(res);
-                    data = res;
-                    var canvas = d3.select("body")
-                        .append("svg")
-                        .attr("width", 1000)
-                        .attr("height", 1000);
+        // Meteor.call('fetchData', function (err, json) {
+        // var script2 = document.createElement('script');
+        // script2.type = 'text/javascript';
+        // script2.src = "../lib/startup/mapInitializer.js";
+        // console.log(document.head);
+        // document.head.appendChild(script2);
+        // console.log(document.head);
 
-                    var group = canvas.selectAll("g")
-                        .data(data.features)
-                        .enter().append("g");
-
-                    var projection = d3.geo.mercator().scale(1000).translate([2170, 1200]);
-                    var path = d3.geo.path().projection(projection);
-                    var areas = group.append("path")
-                        .attr("d", path)
-                        .attr("class", "area")
-                        .attr("fill", "steelblue");
-
-                    group.append("text")
-                        .attr("x", function (d) {
-                            return path.centroid(d)[0];
-                        })
-                        .attr("y", function (d) {
-                            return path.centroid(d)[1];
-                        })
-                        .attr("text-anchor", "middle")
-                        .text(function (d) {
-                            console.log(d.properties.NAME);
-                            return d.properties.NAME;
-                    });
-                }
+        $.getScript( "/mapInitializer.js" )
+            .done(function( script, textStatus ) {
+                console.log( "success" );
+            })
+            .fail(function( jqxhr, settings, exception ) {
+                console.log("failed");
             });
+        var script1 = document.createElement('script');
+        script1.type = 'text/javascript';
+        script1.defer = true;
+        // script1.async = true;
+        script1.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyByh3UfwI3COcQmOBsuLiMlpAfK-pmQOLY&callback=initialize';
+        document.head.appendChild(script1);
+        // this.loadScript();
+    }
+
+
+    loadScript()
+    {
+        var script2 = document.createElement('script');
+        script2.src = "../lib/startup/mapInitializer.js";
+        console.log(document.getElementsByTagName("head"));
+        document.getElementsByTagName("head").appendChild(script2);
+        console.log(document.getElementByTagName("head"));
+        var script1 = document.createElement('script');
+        // script.type = 'text/javascript';
+        script1.defer = true;
+        script1.async = true;
+        script1.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyByh3UfwI3COcQmOBsuLiMlpAfK-pmQOLY&callback=initialize';
+        document.head.append(script1);
 
     }
 
     render(){
         return (
-            <div className="importData"></div>
+            <div id="map"></div>
         );
 
     }

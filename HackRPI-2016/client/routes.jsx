@@ -7,7 +7,7 @@ import RegisterPage from '../lib/ui/pages/RegisterPage.jsx';
 import AppLanding from '../lib/ui/pages/AppLanding.jsx';
 import LoginPage from '../lib/ui/pages/LoginPage.jsx';
 import HomePage from '../lib/ui/pages/home.jsx';
-
+import EventPage from '../lib/ui/pages/EventPage.jsx';
 
 Accounts.onLogin(()=>{
         FlowRouter.go('app');
@@ -48,4 +48,15 @@ FlowRouter.route('/login',{
         mount(LoginPage);
     }
 
+});
+
+var eventRoutes = FlowRouter.group({
+    prefix: "/events"
+});
+
+eventRoutes.route('/create',{
+   name: 'createEvent',
+    action(){
+       mount(EventPage);
+    }
 });

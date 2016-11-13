@@ -1,0 +1,166 @@
+<!--<head>-->
+
+    <!--<style type="text/css">-->
+        <!--/* Set a size for our map container, the Google Map will take up 100% of this container */-->
+        <!--#map {-->
+            <!--width: 750px;-->
+            <!--height: 500px;-->
+        <!--}-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash;-->
+        <!--You need to include this script tag on any page that has a Google Map.-->
+
+        <!--The following script tag will work when opening this example locally on your computer.-->
+        <!--But if you use this on a localhost server or a live website you will need to include an API key.-->
+        <!--Sign up for one here (it's free for small usage):-->
+            <!--https://developers.google.com/maps/documentation/javascript/tutorial#api_key-->
+
+        <!--After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.-->
+            <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY"></script>-->
+    <!--&ndash;&gt;-->
+    <!--&lt;!&ndash; GOOGLE MAPS API KEY: AIzaSyByh3UfwI3COcQmOBsuLiMlpAfK-pmQOLY &ndash;&gt;-->
+    <!--<script async defer-->
+            <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByh3UfwI3COcQmOBsuLiMlpAfK-pmQOLY&callback=initialize">-->
+    <!--</script>-->
+    <!--<script type="text/javascript">-->
+        <!--// This example creates circles on the map, representing populations in North-->
+        <!--// America.-->
+
+        <!--function initialize() {-->
+
+
+            <!--d3.json("http://api.tripadvisor.com/api//partner/2.0/location/48739/attractions?key=" +-->
+                    <!--"2397bb96-6b59-422a-838f-7f093bcf89b4", function (error, json) {-->
+
+                <!--console.log(json);-->
+                <!--json = json.data;-->
+
+                <!--var mapOptions = {-->
+                    <!--zoom: 11,-->
+                    <!--center: new google.maps.LatLng(json[0].latitude, json[0].longitude)-->
+                <!--};-->
+                <!--map = new google.maps.Map(document.getElementById('map'),-->
+                        <!--mapOptions);-->
+
+
+
+                <!--setMarkers(map, json);-->
+                <!--setCircleAssoc(map, json);-->
+                <!--//setCircleAtributos(map, posAtributos);-->
+
+            <!--});-->
+
+        <!--}-->
+
+
+
+        <!--function setMarkers(map, dArray) {-->
+            <!--for (var i = 0; i < dArray.length; i++) {-->
+                <!--var location = dArray[i];-->
+                <!--var marker = new google.maps.Marker({-->
+                    <!--position: new google.maps.LatLng( parseInt(location.latitude) , parseInt(location.longitude)),-->
+                    <!--draggable: true,-->
+                    <!--map: map,-->
+                    <!--title: location.name,-->
+                    <!--visible: false-->
+                <!--});-->
+                <!--setCircle(map, location);-->
+            <!--}-->
+        <!--}-->
+
+        <!--function setCircle(map, location) {-->
+            <!--var draw_circle = new google.maps.Circle({-->
+                <!--center: new google.maps.LatLng( parseInt(location.latitude), parseInt(location.longitude)),-->
+                <!--radius: location.rating * 100,-->
+                <!--strokeColor: "#000",-->
+                <!--strokeOpacity: 0.4,-->
+                <!--strokeWeight: 1,-->
+                <!--fillColor: "red",-->
+                <!--fillColor0: "red",-->
+                <!--map: map-->
+            <!--});-->
+            <!--//overlays.push(draw_circle);-->
+            <!--makeClickable(draw_circle, location.name);-->
+            <!--setMouseOverEvent(draw_circle, location.name);-->
+        <!--}-->
+
+        <!--function setCircleAtributos(map, attr) {-->
+            <!--for (var i = 0; i < attr.length; i++) {-->
+                <!--var atrib = attr[i];-->
+                <!--var draw_circle = new google.maps.Circle({-->
+                    <!--center: new google.maps.LatLng(atrib[1], atrib[2]),-->
+                    <!--radius: atrib[3] * 100,-->
+                    <!--strokeColor: "#000",-->
+                    <!--strokeOpacity: 0.4,-->
+                    <!--strokeWeight: 1,-->
+                    <!--fillColor: atrib[4],-->
+                    <!--fillColor0: atrib[4],-->
+                    <!--fillColor1: "#000",-->
+                    <!--fillOpacity: atrib[5],-->
+                    <!--fillOpacity0: atrib[5],-->
+                    <!--fillOpacity1: atrib[5],-->
+                    <!--map: map-->
+                <!--});-->
+                <!--//overlays.push(draw_circle);-->
+                <!--makeClickable(draw_circle, "circle" + i);-->
+                <!--setMouseOverEvent(draw_circle);-->
+            <!--}-->
+        <!--}-->
+
+        <!--function setCircleAssoc(map, json) {-->
+            <!--for( var key in json){-->
+                <!--var draw_circle = new google.maps.Circle({-->
+                    <!--center: new google.maps.LatLng(parseFloat(json[key].latitude), parseFloat(json[key].longitude)),-->
+                    <!--radius: json[key].rating * 100,-->
+                    <!--strokeColor: "#000",-->
+                    <!--strokeOpacity: 0.8,-->
+                    <!--strokeWeight: 1,-->
+                    <!--fillColor: "red",-->
+                    <!--fillColor0: "red",-->
+                    <!--fillColor1: "#000",-->
+                    <!--fillOpacity: 0.2 * json[key].rating,-->
+<!--//                        fillOpacity0: 0.3,-->
+<!--//                        fillOpacity1: 0.3,-->
+                    <!--map: map-->
+                <!--});-->
+                <!--//overlays.push(draw_circle);-->
+                <!--makeClickable(draw_circle, json[key].name + "-Rating: " + json[key].rating);-->
+                <!--setMouseOverEvent(draw_circle, json[key].name + "-Rating: " + json[key].rating);-->
+            <!--}-->
+
+        <!--}-->
+
+
+
+        <!--function makeClickable(circle, name) {-->
+            <!--var infoWin = new google.maps.InfoWindow({});-->
+            <!--google.maps.event.addListener(circle, "click", function () {-->
+                <!--infoWin.setContent(name);-->
+                <!--infoWin.setPosition(circle.getCenter());-->
+                <!--infoWin.open(map);-->
+            <!--});-->
+        <!--}-->
+
+        <!--function setMouseOverEvent(draw_circle, name) {-->
+            <!--var infoWin = new google.maps.InfoWindow({});-->
+            <!--google.maps.event.addListener(draw_circle, 'mouseover', function (e) {-->
+                <!--infoWin.setContent(name);-->
+                <!--infoWin.setPosition(draw_circle.getCenter());-->
+                <!--infoWin.open(map);-->
+                <!--this.setOptions({-->
+                    <!--fillColor: "#000"-->
+                <!--});-->
+            <!--});-->
+            <!--google.maps.event.addListener(draw_circle, 'mouseout', function (e) {-->
+                <!--infoWin.close();-->
+                <!--this.setOptions({-->
+                    <!--fillColor: this.fillColor0-->
+                <!--});-->
+            <!--});-->
+        <!--}-->
+
+        <!--//google.maps.event.addDomListener(window, 'load', initialize);-->
+
+    <!--</script>-->
+<!--</head>-->
