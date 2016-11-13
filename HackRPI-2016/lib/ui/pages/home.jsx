@@ -17,7 +17,7 @@ export default class HomePage extends Component{
     navbar(){
         var navBarInstance = (
             <ul>
-                <li><a onClick={this.loginHandleClick.bind(this)}>Login</a></li>
+                <li id="left_tab"><a onClick={this.loginHandleClick.bind(this)}>Login</a></li>
                 <li ><a onClick={this.registerHandleClick.bind(this)}>Register</a></li>
             </ul>
         );
