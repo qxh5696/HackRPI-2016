@@ -18,8 +18,11 @@ function importData() {
      "http://api.tripadvisor.com/api//partner/2.0/location/89575,233835,192416/hotels?key=" +
      "2397bb96-6b59-422a-838f-7f093bcf89b4"
      */
-    d3.json("http://api.tripadvisor.com/api//partner/2.0/location/60745/attractions?key=" +
-        "2397bb96-6b59-422a-838f-7f093bcf89b4", function (error, json){
+    /*
+     http://api.tripadvisor.com/api//partner/2.0/location/60745/attractions?key=" +
+     "2397bb96-6b59-422a-838f-7f093bcf89b4
+     */
+    d3.json("data/us.json", function (error, data){
 
         //json = json["Object"];
 
@@ -28,8 +31,38 @@ function importData() {
         if(error){
             return console.warn(error);
         }
-        console.log(json);
+        console.log(data);
 
+        var canvas = d3.select("body")
+            .append("svg")
+            .attr("width", 1000)
+            .attr("height", 1000);
+
+        var group = canvas.selectAll("g")
+            .data(data.features)
+            .enter().append("g");
+
+        var projection =  d3.geo.mercator().scale(1000).translate([2170,1200]);
+        var path = d3.geo.path().projection(projection);
+        var areas = group.append("path")
+            .attr("d", path)
+            .attr("class", "area")
+            .attr("fill","steelblue");
+
+        group.append("text")
+            .attr("x", function(d){
+                return path.centroid(d)[0];
+            })
+            .attr("y",function(d){
+                return path.centroid(d)[1];
+            })
+            .attr("text-anchor", "middle")
+            .text(function (d){
+                console.log(d.properties.NAME);
+                return d.properties.NAME;
+            });
+
+        /*
         json = json.data;
         var canvas = d3.select(".importData")
             .append("svg")
@@ -61,7 +94,7 @@ function importData() {
             .attr("x",5)
             .text(function (d){
                 return d.name + ", rating: " + d.rating;
-            });
+            });*/
     });
 }
 
