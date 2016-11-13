@@ -1,0 +1,14 @@
+.mainDiv {
+    background: #589442;
+    height: 200px;
+    padding-top: 3.5%;
+
+}
+
+.btn.btn-primary{
+    background-color: #425894;
+}
+
+.btn.btn-danger {
+    background: #944258;
+}
