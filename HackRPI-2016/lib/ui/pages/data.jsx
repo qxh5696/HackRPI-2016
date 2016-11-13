@@ -10,7 +10,7 @@ export default class DataPage extends Component{
 
     componentDidMount(){
 
-            let data = Meteor.call('importData',function(err,res){
+            let data = Meteor.call('fetchData',function(err,res){
                 if (err){
                     console.log(err);
                 }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { FlowRouter } from 'meteor/kadira:flow-router';
-import './home.css';
+
 
 export default class HomePage extends Component{
 
