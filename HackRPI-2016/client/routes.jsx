@@ -5,6 +5,13 @@ import { mount } from 'react-mounter';
 import DataPage from '../lib/ui/pages/data.jsx';
 import RegisterPage from '../lib/ui/pages/RegisterPage.jsx';
 import AppLanding from '../lib/ui/pages/AppLanding.jsx';
+import LoginPage from '../lib/ui/pages/LoginPage.jsx';
+
+
+Accounts.onLogin(()=>{
+        FlowRouter.go('app');
+    }
+);
 
 FlowRouter.route('/',{
     name: 'Home',
@@ -25,4 +32,12 @@ FlowRouter.route('/home',{
     action(){
         mount(AppLanding);
     }
+});
+
+FlowRouter.route('/login',{
+    name: 'Login',
+    action(){
+        mount(LoginPage);
+    }
+
 });

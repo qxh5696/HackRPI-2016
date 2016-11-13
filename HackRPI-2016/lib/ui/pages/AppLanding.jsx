@@ -1,16 +1,14 @@
 import { Meteor } from 'meteor/meteor';
 import React, { Component, PropTypes } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
-import { Person } from '../../api/auth.js';
 
+import { Person } from '../../api/auth.js';
+import LogoutButton from '../components/LogoutButton.jsx';
 
 class AppLanding extends Component{
     constructor(props){
         super(props);
     }
-
-
-
 
     componentWillMount(){
 
@@ -19,7 +17,10 @@ class AppLanding extends Component{
 
     render(){
         return (
-            <h1>Welcome Home {this.props.currentUser? this.props.currentUser.username: ""}!</h1>
+            <div>
+                <h1>Welcome Home {this.props.currentUser? this.props.currentUser.username: ""}!</h1>
+                <LogoutButton/>
+            </div>
         );
     }
 }
