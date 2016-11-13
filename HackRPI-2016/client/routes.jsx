@@ -3,18 +3,41 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 
 import DataPage from '../lib/ui/pages/data.jsx';
-import HomePage from '../lib/ui/pages/home.jsx';
+import RegisterPage from '../lib/ui/pages/RegisterPage.jsx';
+import AppLanding from '../lib/ui/pages/AppLanding.jsx';
+import LoginPage from '../lib/ui/pages/LoginPage.jsx';
+
+
+Accounts.onLogin(()=>{
+        FlowRouter.go('app');
+    }
+);
 
 FlowRouter.route('/',{
     name: 'Home',
     action(){
-        mount(HomePage);
+        mount(DataPage);
     }
 });
 
-FlowRouter.route('/data', {
-    name: 'Data',
+FlowRouter.route('/register',{
+    name: 'Register',
     action(){
-        mount(DataPage);
+        mount(RegisterPage);
     }
-})
+});
+
+FlowRouter.route('/home',{
+    name: 'app',
+    action(){
+        mount(AppLanding);
+    }
+});
+
+FlowRouter.route('/login',{
+    name: 'Login',
+    action(){
+        mount(LoginPage);
+    }
+
+});
