@@ -14,10 +14,21 @@ export default class HomePage extends Component{
         FlowRouter.go('/register');
     }
 
+    image(){
+        var images =(
+            <div id="banner">
+                <div><img id="Pic_1" src={'http://i65.tinypic.com/2j4q5uf.jpg'} border="0" alt="Num 1"/></div>
+                <div><img id="Pic_2" src={'http://i68.tinypic.com/28lghvq.jpg'} border="0" alt="Num 2"/></div>
+            </div>
+        );
+
+        return images;
+    }
+
     navbar(){
         var navBarInstance = (
             <ul>
-                <li><a onClick={this.loginHandleClick.bind(this)}>Login</a></li>
+                <li id="left_tab"><a onClick={this.loginHandleClick.bind(this)}>Login</a></li>
                 <li ><a onClick={this.registerHandleClick.bind(this)}>Register</a></li>
             </ul>
         );
@@ -27,7 +38,10 @@ export default class HomePage extends Component{
 
     render() {
         return(
-            this.navbar()
+            <div>
+                {this.navbar()}
+                {this.image()}
+            </div>
         );
     }
 };
