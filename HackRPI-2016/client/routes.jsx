@@ -6,6 +6,7 @@ import DataPage from '../lib/ui/pages/data.jsx';
 import RegisterPage from '../lib/ui/pages/RegisterPage.jsx';
 import AppLanding from '../lib/ui/pages/AppLanding.jsx';
 import LoginPage from '../lib/ui/pages/LoginPage.jsx';
+import HomePage from '../lib/ui/pages/home.jsx';
 
 
 Accounts.onLogin(()=>{
@@ -14,7 +15,14 @@ Accounts.onLogin(()=>{
 );
 
 FlowRouter.route('/',{
-    name: 'Home',
+    name:'Home',
+    action(){
+        mount(HomePage);
+    }
+});
+
+FlowRouter.route('/data',{
+    name: 'Data',
     action(){
         mount(DataPage);
     }
