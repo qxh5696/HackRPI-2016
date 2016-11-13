@@ -18,8 +18,7 @@ export default class RegisterPage extends Component{
 
         Accounts.createUser(userObject,function(err){
             if(err){
-                console.error(err.reason);
-                console.log(err.reason);
+                console.log(err);
             }
             else{
                 FlowRouter.go('app');
