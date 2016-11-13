@@ -4,7 +4,7 @@ import { mount } from 'react-mounter';
 
 import DataPage from '../lib/ui/pages/data.jsx';
 import RegisterPage from '../lib/ui/pages/RegisterPage.jsx';
-import AppLanding from '../lib/ui/pages/AppLanding.jsx';
+import LandingPage from '../lib/ui/pages/landing.jsx';
 import LoginPage from '../lib/ui/pages/LoginPage.jsx';
 
 
@@ -27,10 +27,10 @@ FlowRouter.route('/register',{
     }
 });
 
-FlowRouter.route('/home',{
-    name: 'app',
+FlowRouter.route('/landing',{
+    name: 'Landing',
     action(){
-        mount(AppLanding);
+        mount(LandingPage);
     }
 });
 
