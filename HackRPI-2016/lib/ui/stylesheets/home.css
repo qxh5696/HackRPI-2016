@@ -1,3 +1,64 @@
+/* Set margin, padding, and border to zero */
+body{
+    background-color: #425894;
+}
+* {
+    margin:0;
+    padding:0;
+    border:0 none;
+}
+
+/* set box width */
+.box {
+    width:900px;
+    margin:0 auto;
+}
+
+#banner {
+    width: 800px; /* Size of images*/
+    height: 300px;
+    position: relative;  /* For absolute positioning inside */
+    border: 8px solid #eee;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#banner div {
+    position: absolute; /* Top and left zero are implied */
+}
+
+/* Second image is on top */
+#banner div:nth-child(2) {
+    -webkit-animation: wipe 6s infinite;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-direction: alternate;
+    -webkit-mask-size: 2000px 2000px;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, /* use webkit gradient to create image */
+    color-stop(0.00,  rgba(0,0,0,1)),
+    color-stop(0.45,  rgba(0,0,0,1)),
+    color-stop(0.50,  rgba(0,0,0,0)),
+    color-stop(0.55,  rgba(0,0,0,0)),
+    color-stop(1.00,  rgba(0,0,0,0)));
+}
+
+/* use webkit animation to automatically move mask */
+@-webkit-keyframes wipe {
+    0% {
+        -webkit-mask-position: 0 0; /* Implied normally, but needed for animation */
+    }
+    100% {
+        -webkit-mask-position: -1200px -1200px;
+    }
+}
+
+
+
 #left_tab { padding-left: 14px; }
 
 ul {
