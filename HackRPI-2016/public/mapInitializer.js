@@ -1,9 +1,11 @@
 /**
  * Created by qadirhaqq on 11/13/16.
  */
+
+
 function initialize() {
 
-    d3.json("http://api.tripadvisor.com/api//partner/2.0/location/48739/attractions?key=" +
+    /*d3.json("http://api.tripadvisor.com/api//partner/2.0/location/48739/attractions?key=" +
         "2397bb96-6b59-422a-838f-7f093bcf89b4", function (error, json) {
 
         console.log(json);
@@ -20,7 +22,13 @@ function initialize() {
 
         setMarkers(map, json);
         setCircleAssoc(map, json);
-    });
+    });*/
+    var mapOptions = {
+        zoom: 11,
+        center: new google.maps.LatLng(37.09024,
+         -95.712891)
+    };
+    map = new google.maps.Map(document.getElementById('map'),mapOptions);
 
 }
 

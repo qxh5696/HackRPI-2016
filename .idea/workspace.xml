@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cc40adf-1e98-45c7-b379-bf4f91828ecf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HackRPI-2016/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/HackRPI-2016/.idea/libraries/meteor_packages_auto_import_browser.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HackRPI-2016/.idea/libraries/meteor_packages_auto_import_npm.xml" afterPath="$PROJECT_DIR$/HackRPI-2016/.idea/libraries/meteor_packages_auto_import_npm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HackRPI-2016/public/mapChanger.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/api/auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/api/dataService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/components/EventForm.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/components/LoginForm.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/components/LogoutButton.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/components/RegisterForm.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/components/StateOption.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/AppLanding.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/EventPage.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/LoginPage.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/RegisterPage.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/data.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/home.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/landing.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/landing.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/stylesheets/LoginForm.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/stylesheets/home.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HackRPI-2016/lib/ui/stylesheets/map.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HackRPI-2016/client/main.jsx" afterPath="$PROJECT_DIR$/HackRPI-2016/client/main.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HackRPI-2016/client/routes.jsx" afterPath="$PROJECT_DIR$/HackRPI-2016/client/routes.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HackRPI-2016/public/mapInitializer.js" afterPath="$PROJECT_DIR$/HackRPI-2016/public/mapInitializer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HackRPI-2016/server/main.js" afterPath="$PROJECT_DIR$/HackRPI-2016/server/main.js" />
     </list>
     <ignored path="HackRPI-2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,8 +51,95 @@
   <component name="FavoritesManager">
     <favorites_list name="HackRPI-2016" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackRPI-2016/client/main.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackRPI-2016/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="packages" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackRPI-2016/.meteor/packages">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapInitializer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HackRPI-2016/public/mapInitializer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapChanger.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackRPI-2016/public/mapChanger.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackRPI-2016/client/routes.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/HackRPI-2016/public/mapChanger.js" />
+        <option value="$PROJECT_DIR$/HackRPI-2016/lib/ui/components/EventForm.jsx" />
+        <option value="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/landing.jsx" />
+        <option value="$PROJECT_DIR$/HackRPI-2016/client/main.jsx" />
+        <option value="$PROJECT_DIR$/HackRPI-2016/lib/ui/pages/data.jsx" />
+        <option value="$PROJECT_DIR$/HackRPI-2016/public/mapInitializer.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -34,16 +148,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/HackRPI-2016/.meteor/local/build/programs/server/node_modules" />
-    <handled-path value="$PROJECT_DIR$/HackRPI-2016/.meteor/local/build/programs/server/npm/node_modules" />
-    <handled-path value="$PROJECT_DIR$/HackRPI-2016/.meteor/local/dev_bundle/lib/node_modules" />
-    <handled-path value="$PROJECT_DIR$/HackRPI-2016/.meteor/local/dev_bundle/server-lib/node_modules" />
+    <handled-path value="$PROJECT_DIR$/HackRPI-2016/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -70,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -103,19 +214,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackRPI-2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackRPI-2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackRPI-2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HackRPI-2016" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
     <property name="js.meteor.library.was.enabled" value="true" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Meteor.Visualizer">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -141,6 +278,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -148,6 +291,18 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="meteor-app-runner" factoryName="Meteor">
+      <option name="exePath" value="C:\Users\UC214475\AppData\Local\.meteor\meteor.bat" />
+      <option name="startBrowserSettings">
+        <browser url="http://localhost:3000" />
+      </option>
+      <meteor-runner-state>
+        <startBrowserSettings>
+          <browser url="http://localhost:3000" />
+        </startBrowserSettings>
+      </meteor-runner-state>
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
@@ -163,6 +318,34 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration default="false" name="Visualizer" type="meteor-app-runner" factoryName="Meteor" workingDirectory="$PROJECT_DIR$/HackRPI-2016">
+      <option name="exePath" value="$USER_HOME$/AppData/Local/.meteor/meteor.bat" />
+      <option name="startBrowserSettings">
+        <browser url="http://localhost:3000" />
+      </option>
+      <meteor-runner-state>
+        <startBrowserSettings>
+          <browser url="http://localhost:3000" />
+        </startBrowserSettings>
+      </meteor-runner-state>
+      <method />
+    </configuration>
+    <configuration default="false" name="npm install" type="meteor-app-runner" factoryName="Meteor" programParameters="npm install " workingDirectory="$PROJECT_DIR$/HackRPI-2016">
+      <option name="exePath" value="$USER_HOME$/AppData/Local/.meteor/meteor.bat" />
+      <option name="startBrowserSettings">
+        <browser url="http://localhost:3000" />
+      </option>
+      <meteor-runner-state>
+        <startBrowserSettings>
+          <browser url="http://localhost:3000" />
+        </startBrowserSettings>
+      </meteor-runner-state>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Meteor.Visualizer" />
+      <item index="1" class="java.lang.String" itemvalue="Meteor.npm install" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -175,6 +358,7 @@
       <option name="presentableId" value="Default" />
       <updated>1478982199130</updated>
       <workItem from="1478982201235" duration="716000" />
+      <workItem from="1479151190703" duration="4721000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/qxh5696/HackRPI-2016&#10;&#10;# Conflicts:&#10;#&#9;HackRPI-2016/.idea/HackRPI-2016.iml&#10;#&#9;HackRPI-2016/.idea/jsLibraryMappings.xml&#10;#&#9;HackRPI-2016/.idea/workspace.xml&#10;">
       <created>1478982511859</created>
@@ -187,28 +371,28 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="716000" />
+    <option name="totallyTimeSpent" value="5437000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20205066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22483222" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -229,5 +413,99 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/imports/ui/pages/EventPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/imports/ui/components/EventForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/imports/api/dataService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/public/mapChanger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/client/main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/imports/ui/pages/landing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/client/routes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/imports/ui/pages/data.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackRPI-2016/public/mapInitializer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

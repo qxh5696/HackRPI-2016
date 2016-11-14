@@ -2,12 +2,12 @@ import React from 'react';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 
-import DataPage from '../lib/ui/pages/data.jsx';
-import RegisterPage from '../lib/ui/pages/RegisterPage.jsx';
-import LandingPage from '../lib/ui/pages/landing.jsx';
-import LoginPage from '../lib/ui/pages/LoginPage.jsx';
-import HomePage from '../lib/ui/pages/home.jsx';
-import EventPage from '../lib/ui/pages/EventPage.jsx';
+import DataPage from '../imports/ui/pages/data.jsx';
+import RegisterPage from '../imports/ui/pages/RegisterPage.jsx';
+import LandingPage from '../imports/ui/pages/landing.jsx';
+import LoginPage from '../imports/ui/pages/LoginPage.jsx';
+import HomePage from '../imports/ui/pages/home.jsx';
+import EventPage from '../imports/ui/pages/EventPage.jsx';
 
 Accounts.onLogin(()=>{
         FlowRouter.go('Landing');
