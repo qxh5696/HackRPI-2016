@@ -2,6 +2,7 @@ import React from 'react';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 import { render } from 'react-dom';
+
 import DataPage from '../imports/ui/pages/data.jsx';
 import RegisterPage from '../imports/ui/pages/RegisterPage.jsx';
 import LandingPage from '../imports/ui/pages/landing.jsx';
@@ -24,14 +25,7 @@ FlowRouter.route('/',{
 FlowRouter.route('/data',{
     name: 'Data',
     action(){
-        // mount(DataPage);
-        var checkExist =  setInterval(function() {
-            if ($('#root').length) {
-                console.log("Exists!");
-                clearInterval(checkExist);
-                render(<DataPage/>,document.getElementById('root'));
-            }
-        }, 100);
+        mount(DataPage);
     }
 });
 
