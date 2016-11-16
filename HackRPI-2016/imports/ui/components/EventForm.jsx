@@ -30,18 +30,21 @@ export default class EventForm extends Component{
 
     }
 
-    componentDidMount(){
-        /*$.getScript('/mapChanger.js')
-            .done()*/
+
+    handleSubmit(event){
+        event.preventDefault();
+        let city = ReactDOM.findDOMNode(this.refs.city).value.trim();
+        let state = ReactDOM.findDOMNode(this.refs.stateAbbrev).value.trim();
+        this.props.onSubmit( city, state );
     }
 
     render(){
 
         return(
             <div>
-                <form id="eventForm">
-                    <input id="city"/>
-                    <select id="state">
+                <form id="eventForm" onSubmit={this.handleSubmit.bind(this)}>
+                    <input ref="city" id="city"/>
+                    <select ref="stateAbbrev" id="state">
                         {this.state.optionTags}
                     </select>
                     <button type="submit">Submit</button>

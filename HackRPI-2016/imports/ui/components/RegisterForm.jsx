@@ -6,7 +6,7 @@ export default class Home extends Component{
     handleSubmit(e){
 
         e.preventDefault();
-        let email = ReactDOM.findDOMNode(this.refs.username).value.trim();
+        let email = ReactDOM.findDOMNode(this.refs.email).value.trim();
         let username = ReactDOM.findDOMNode(this.refs.username).value.trim();
         let pwd = ReactDOM.findDOMNode(this.refs.password).value.trim();
         this.props.onSubmit( email,username,pwd );
